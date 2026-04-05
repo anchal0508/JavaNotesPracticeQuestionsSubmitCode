@@ -7,7 +7,7 @@ Choose a Catagory (DDL)
 */
 
 function handleFormSubmit(event) {  
-    event.preventDefault();
+    // event.preventDefault();
 
     const expense = event.target.expense.value;
     const Description = event.target.Description.value;
@@ -120,4 +120,4 @@ function update(editId, userDetails, userList) {
     li.firstChild.textContent = Object.values(userDetails).join(" ");
     sessionStorage.removeItem("editId");
 }
-    module.exports = handleFormSubmit
+    // module.exports = handleFormSubmit
